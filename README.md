@@ -9,8 +9,8 @@
 ### 🚀 About Me
 
 - 👨‍💻 I work with a wide range of technologies:
-  - **Frontend**: HTML, CSS, JavaScript, ReactJS
-  - **Backend**: Node.js, PHP, Django, Java EE
+  - **Frontend**: HTML, CSS, JavaScript, TypeScript, ReactJS
+  - **Backend**: Node.js, PHP, Django, Java EE, Spring Boot
   - **Desktop**: C++ with Qt, Java (Swing/JavaFX)
   - **Databases**: SQL (SQLite, MySQL, PostgreSQL), NoSQL (MongoDB, Redis, Firebase)
   - **AI & ML**: Python, Pandas, NumPy, scikit-learn, OpenCV, YOLO
