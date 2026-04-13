@@ -25,3 +25,4 @@ npm run dev
 
 Le mode demo est active via `VITE_DEMO_MODE=true` dans `.env`.
 Les donnees sont stockees localement dans le navigateur (`localStorage`) pour conserver les changements pendant la session de demo.
+# liveDemo
