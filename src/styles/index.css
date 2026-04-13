@@ -1,0 +1,155 @@
+@import "tailwindcss";
+
+:root {
+	--app-bg: #f4f7fb;
+	--app-surface: #ffffff;
+	--app-surface-soft: #f8fbff;
+	--app-border: #d9e2f0;
+	--app-text: #111827;
+	--app-muted: #64748b;
+}
+
+html,
+body,
+#root {
+	min-height: 100%;
+}
+
+body {
+	margin: 0;
+	background: var(--app-bg);
+	color: var(--app-text);
+}
+
+html.theme-dark {
+	--app-bg: #070f1d;
+	--app-surface: #101a2c;
+	--app-surface-soft: #0d1728;
+	--app-border: #223958;
+	--app-text: #e6edf9;
+	--app-muted: #94a7c4;
+	color-scheme: dark;
+}
+
+html.theme-dark body,
+html.theme-dark .app-container,
+html.theme-dark .main-content {
+	background: var(--app-bg);
+	color: var(--app-text);
+}
+
+/* Global utility remap for existing screens in dark mode */
+html.theme-dark .bg-gray-50,
+html.theme-dark .bg-gray-100,
+html.theme-dark .bg-white {
+	background-color: var(--app-surface) !important;
+}
+
+html.theme-dark .text-gray-900,
+html.theme-dark .text-gray-800,
+html.theme-dark .text-gray-700,
+html.theme-dark .text-black {
+	color: var(--app-text) !important;
+}
+
+html.theme-dark .text-gray-600,
+html.theme-dark .text-gray-500,
+html.theme-dark .text-gray-400 {
+	color: var(--app-muted) !important;
+}
+
+html.theme-dark .border,
+html.theme-dark .border-gray-100,
+html.theme-dark .border-gray-200,
+html.theme-dark .border-gray-300 {
+	border-color: var(--app-border) !important;
+}
+
+html.theme-dark .shadow,
+html.theme-dark .shadow-md,
+html.theme-dark .shadow-lg,
+html.theme-dark .shadow-xl,
+html.theme-dark .shadow-2xl {
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35) !important;
+}
+
+html.theme-dark .text-blue-600 {
+	color: #77b3ff !important;
+}
+
+html.theme-dark .hover\:text-blue-800:hover {
+	color: #c6e0ff !important;
+}
+
+html.theme-dark input,
+html.theme-dark select,
+html.theme-dark textarea {
+	background-color: #0c1728 !important;
+	border-color: var(--app-border) !important;
+	color: var(--app-text) !important;
+}
+
+html.theme-dark input::placeholder,
+html.theme-dark textarea::placeholder {
+	color: #7f95b7 !important;
+}
+
+/* Unified toast style */
+.app-toast {
+	border-radius: 0.9rem;
+	border: 1px solid rgba(26, 49, 82, 0.18);
+	box-shadow: 0 12px 28px rgba(11, 24, 45, 0.14);
+	font-size: 0.92rem;
+	font-weight: 550;
+}
+
+.app-toast-success {
+	background: linear-gradient(140deg, #ebfff5, #d9fbe8);
+	color: #0b5f37;
+}
+
+.app-toast-error {
+	background: linear-gradient(140deg, #fff1f1, #ffe2e2);
+	color: #8f1f1f;
+}
+
+.app-toast-warning {
+	background: linear-gradient(140deg, #fff8e6, #ffefc2);
+	color: #7d520a;
+}
+
+.app-toast-info,
+.app-toast-default {
+	background: linear-gradient(140deg, #eef6ff, #dcebff);
+	color: #153a74;
+}
+
+html.theme-dark .app-toast {
+	border-color: #2b4264;
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+}
+
+html.theme-dark .app-toast-success {
+	background: linear-gradient(140deg, #103324, #124531);
+	color: #b6f8d5;
+}
+
+html.theme-dark .app-toast-error {
+	background: linear-gradient(140deg, #3f1717, #562121);
+	color: #ffc5c5;
+}
+
+html.theme-dark .app-toast-warning {
+	background: linear-gradient(140deg, #403116, #5a431d);
+	color: #ffe0a0;
+}
+
+html.theme-dark .app-toast-info,
+html.theme-dark .app-toast-default {
+	background: linear-gradient(140deg, #132d50, #1c3e6c);
+	color: #cfe3ff;
+}
+
+.app-toast-progress {
+	background: linear-gradient(90deg, #0f6adf, #11a0ff) !important;
+}
